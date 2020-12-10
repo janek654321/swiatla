@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", 'https://app.remoteme.org/api/~776174_TcCRYQWFRW84pFAzigb4N83g/rest/v1/variable/set/variableValue/swiatlo/INTEGER/'+theUrl+'/', false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+</script>
+</head>
+
+<body>
+<button type="button" onclick="httpGet('0')">0</button>
+<button type="button" onclick="httpGet('1')">1</button>
+<button type="button" onclick="httpGet('2')">2</button>
+<button type="button" onclick="httpGet('3')">3</button>
+</body>
+</html>
